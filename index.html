@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href ="css/reset.css">
-    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href ="css/reset.css">
+
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Pets</title>
 </head>
 <body>
     <!-- <header><h1>Pets</h1></header> -->
-     <a href = "#main" id = "skip">Skip to Main Content</a>
+     <a href = "#main" id = "skip" class = "link">Skip to Main Content</a>
     <nav>
         <ul> 
-            <li><a href="index.html">Pets</a></li>
-            <li><a href="travel.html">Travel</a></li> 
-            <li><a href="recipes.html">Recipes</a></li> 
+            <li><a href="index.html" class = "link current">Pets</a></li>
+            <li ><a href="travel.html" class = "link">Travel</a></li> 
+            <li><a href="recipes.html" class = "link">Recipes</a></li> 
         </ul>
     </nav>
 
-    <main id = "main">
+    <main id = "main" class="pets">
+        <header><h1>Class Pets</h1></header>
         <div><h2>Bacon</h2>
-        <img width = "400" src = "images/bacon.jpg" alt = "Brown labradoodle wearing colorful lei">
+        <img id="mainpet" width = "400" src = "images/bacon.jpg" alt = "Brown labradoodle wearing colorful lei">
         <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him.  He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.
         </p>
         <p>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy.  He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride."  There is also a lot of rolling.  Lots and lots of rolling. 
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/bacon_halloween.JPG" alt = "bacon halloween">
-        <img width = "200" src = "images/bacon_graduation.JPG" alt = "bacon graduation">
-        <img width = "200" src = "images/bacon_bandana.JPG" alt = "bacon bandana">
-         <video width="200" controls>
-            <source src="images/bacon_agility.mov">
-            Your browser does not support the video tag.
-          </video>
+        <div class="petgallery">
+        <a href = "images/bacon_halloween.JPG" target="_blank" data-lightbox="bacongallery" data-title="Bacon in Pirate Costume" data-alt="dog in pirate costume">
+            <img width = "200" src = "images/bacon_halloween.JPG" alt = "bacon halloween">
+        </a>
+        <a href = "images/bacon_graduation.JPG" target="_blank" data-lightbox="bacongallery" data-title="Bacon Graduating" data-alt="dog graduating">
+            <img width = "200" src = "images/bacon_graduation.JPG" alt = "bacon graduation">
+        </a>
+        <a href = "images/bacon_bandana.JPG" target="_blank" data-lightbox="bacongallery" data-title="Bacon Wearing Bandana" data-alt="dog wearing bandana">
+            <img width = "200" src = "images/bacon_bandana.JPG" alt = "bacon bandana">
+        </a>
+        <a href = "images/bacon_agility.mov" target="_blank" data-lightbox="bacongallery" data-title="Bacon in Agility Course" data-alt="dog doing agility course">
+             <video width="200" controls>
+                <source src="images/bacon_agility.mov">
+                Your browser does not support the video tag.
+              </video>
+        </a>
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Belly rubs</li>
             <li>Playing tug-of-war</li>
             <li>Sneaking onto the couch</li>
@@ -48,12 +63,14 @@
         <p>Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged. 
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/cheeto_carpet.jpg" alt = "cheeto laying sideways on the carpet">
-        <img width = "200" src = "images/cheeto_moon.jpg" alt = "cheeto lying in the sun in a half moon cresent shape">
-        <img width = "200" src = "images/cheeto_boxes.jpg" alt = "cheeto lying on boxes with one leg hanging off">
-        <img width = "200" src = "images/cheeto_attack.jpg" alt = "cheeto attacking a hand trying to pet him">
+        <div class = "petgallery">
+            <img width = "200" src = "images/cheeto_carpet.jpg" alt = "cheeto laying sideways on the carpet">
+            <img width = "200" src = "images/cheeto_moon.jpg" alt = "cheeto lying in the sun in a half moon cresent shape">
+            <img width = "200" src = "images/cheeto_boxes.jpg" alt = "cheeto lying on boxes with one leg hanging off">
+            <img width = "200" src = "images/cheeto_attack.jpg" alt = "cheeto attacking a hand trying to pet him">
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Treats</li>
             <li>Exploring</li>
             <li>My Dad</li>
@@ -67,12 +84,14 @@
         <p>Bear is also scared of a lot of things. He doesn’t like water (showers and even rain) or getting his nails clipped, and he’s sometimes even so lazy that he’ll just stop walking and sit down until you turn around and go back home. 
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/bear_squish.JPG" alt = "bear is laying on his back with a squished face">
-        <img width = "200" src = "images/bear_leash.jpeg" alt = "bear on his back fighting with his leash">
-        <img width = "200" src = "images/bear_lazy.JPG" alt = "bear taking a break under a tree during a walk">
-        <img width = "200" src = "images/bear_sunbathing.jpeg" alt = "bear sitting under a window in the sun">
+        <div class = "petgallery">
+            <img width = "200" src = "images/bear_squish.JPG" alt = "bear is laying on his back with a squished face">
+            <img width = "200" src = "images/bear_leash.jpeg" alt = "bear on his back fighting with his leash">
+            <img width = "200" src = "images/bear_lazy.JPG" alt = "bear taking a break under a tree during a walk">
+            <img width = "200" src = "images/bear_sunbathing.jpeg" alt = "bear sitting under a window in the sun">
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Food</li>
             <li>Laying in bed</li>
             <li>Fetch</li>
@@ -86,12 +105,14 @@
         <p>As energetic as Biscuit is, he also likes to relax. He loves to sleep in his dog bed and watch Netflix with his owners. His favorite treat is apples.
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/biscuit2.jpeg" alt = "biscuit standing in the sunlight">
-        <img width = "200" src = "images/biscuit3.jpeg" alt = "biscuit smiling for the camera">
-        <img width = "200" src = "images/biscuit4.jpeg" alt = "biscuit standing near the road">
-        <img width = "200" src = "images/biscuit5.jpeg" alt = "biscuit sleeping">
+        <div class = "petgallery">
+            <img width = "200" src = "images/biscuit2.jpeg" alt = "biscuit standing in the sunlight">
+            <img width = "200" src = "images/biscuit3.jpeg" alt = "biscuit smiling for the camera">
+            <img width = "200" src = "images/biscuit4.jpeg" alt = "biscuit standing near the road">
+            <img width = "200" src = "images/biscuit5.jpeg" alt = "biscuit sleeping">
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Going for walks</li>
             <li>Swimming</li>
             <li>Apples</li>
@@ -105,12 +126,14 @@
         <p>He does not like any toys anymore as when he was younger, he watched a bigger toy shred his favorite one to pieces. He used to know how to roll over, but now replaced that memory with a spin as it is much easier.
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/chief_sleeping.jpg" alt = "caramel pomeranian rolling in the grass">
-        <img width = "200" src = "images/chief_cone.jpg" alt = "caramel pomeranian with a cone around his head">
-        <img width = "200" src = "images/chief_stare.jpg" alt = "caramel pomeranian staring at geese">
-        <img width = "200" src = "images/chief_licking.jpg" alt = "caramel pomeranian licking a lid">
+        <div class = "petgallery">
+            <img width = "200" src = "images/chief_sleeping.jpg" alt = "caramel pomeranian rolling in the grass">
+            <img width = "200" src = "images/chief_cone.jpg" alt = "caramel pomeranian with a cone around his head">
+            <img width = "200" src = "images/chief_stare.jpg" alt = "caramel pomeranian staring at geese">
+            <img width = "200" src = "images/chief_licking.jpg" alt = "caramel pomeranian licking a lid">
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Sleeping</li>
             <li>Deli Chicken</li>
             <li>Pets behind the ear</li>
@@ -124,12 +147,14 @@
         <p>He has an abundance of toys but only likes to play with a couple. He enjoys going on walks and especially on trails in the woods. He has a few dog friends that he likes to go on playdates with as well.
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/bo_walking.jpg" alt = "black and white dog walking on grass">
-        <img width = "200" src = "images/bo_and_friend.jpg" alt = "black and white dog sitting by other black dog">
-        <img width = "200" src = "images/bo_plane.jpg" alt = "black and white dog in front of airplane">
-        <img width = "200" src = "images/bo_chair.jpg" alt = "black and white dog sitting on top of chair">
+        <div class = "petgallery">
+            <img width = "200" src = "images/bo_walking.jpg" alt = "black and white dog walking on grass">
+            <img width = "200" src = "images/bo_and_friend.jpg" alt = "black and white dog sitting by other black dog">
+            <img width = "200" src = "images/bo_plane.jpg" alt = "black and white dog in front of airplane">
+            <img width = "200" src = "images/bo_chair.jpg" alt = "black and white dog sitting on top of chair">
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Walks</li>
             <li>The Sun</li>
             <li>Treats</li>
@@ -142,17 +167,27 @@
         <p>Subin was somehow not bothered by vaccum cleaners. Even though the loudness of it was able to scare any animals away, Subin enjoyed the chaos of it, opting to even sit on the handle as we vaccum.
         </p>
         <h3>Photo Gallery</h3>
-        <img width = "200" src = "images/BobTailCat2.jpeg" alt = "Small young subin with blue background facing towards the camera">
-        <img width = "200" src = "images/BobTailCat3.jpeg" alt = "Small young subin with blue background looking bottom left">
-        <img width = "200" src = "images/BobTailCat4.jpeg" alt = "Older subin with a greenish blue background ready to pounce">
-        <img width = "200" src = "images/BobTailCat5.jpeg" alt = "Very old and mature subin with a brownish yellow background looking at the camera">
+        <div class = "petgallery">
+            <img width = "200" src = "images/BobTailCat2.jpeg" alt = "Small young subin with blue background facing towards the camera">
+            <img width = "200" src = "images/BobTailCat3.jpeg" alt = "Small young subin with blue background looking bottom left">
+            <img width = "200" src = "images/BobTailCat4.jpeg" alt = "Older subin with a greenish blue background ready to pounce">
+            <img width = "200" src = "images/BobTailCat5.jpeg" alt = "Very old and mature subin with a brownish yellow background looking at the camera">
+        </div>
         <h3>Likes</h3>
-        <ul>
+        <ul class="likes">
             <li>Hitting people’s faces</li>
             <li>Sleeping under the sun</li>
             <li>Laying on a keybaord</li>
         </ul>
         <!-- Ramsey (Nyang Lin Phyo) -->
     </main>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <!-- <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'positionFromTop': 50
+        })
+    </script> -->
 </body>
 </html>
