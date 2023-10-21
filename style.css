@@ -284,18 +284,43 @@ section img, section video {
 }
 
 @media screen and (prefers-reduced-motion: reduce){
-    .gif{
+    img.gif{
       display: none;
     }
   
-    .static{
+    img.static{
       display: block;
+    }
+
+    .pets img {
+      width: 100%;
     }
 
     .pets img:hover{
       transition: none;
+      transition-duration: 0;
+      transform: none;
+    }
+
+    .travel img {
+      width: 100%;
     }
     
+    .travel img:hover {
+      transition: none;
+      transition-duration: 0;
+      transform: none;
+    }
+
+    .recipes img {
+      width: 100%;
+    }
+
+    .recipes img:hover {
+      transition: none;
+      transition-duration: 0;
+      transform: none;
+    }
   }
 
   
